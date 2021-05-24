@@ -17,9 +17,9 @@ age n a = a-n
 isElderly :: Int -> Bool
 isElderly n = n>65
 
--- adiciona <li> no inicio e <\li> no final de uma string
+-- adiciona <li> no inicio e </li> no final de uma string
 htmlItem :: String -> String
-htmlItem s = "<li>" ++ s ++ "<\\li>"
+htmlItem s = "<li>" ++ s ++ "</li>"
 
 -- verifica se string inicia com A
 startsWithA :: String -> Bool

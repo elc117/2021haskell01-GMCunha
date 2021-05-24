@@ -15,7 +15,7 @@ isElderly :: Int -> Bool
 isElderly n = n>65
 
 htmlItem :: String -> String
-htmlItem s = "<li>" ++ s ++ "<\\li>"
+htmlItem s = "<li>" ++ s ++ "</li>"
 
 startsWithA :: String -> Bool
 startsWithA s = (head s) == 'A'
