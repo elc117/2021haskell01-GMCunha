@@ -71,3 +71,22 @@ between60and80 n = (n >= 60) && (n <= 80)
 -- remove numeros que nao estiverem entre 60 e 80 em uma lista
 onlyBetween60and80 :: [Int] -> [Int]
 onlyBetween60and80 strs = filter between60and80 strs
+
+-- funcao para identificar espacos
+espaco :: Char -> Bool
+espaco c = c == ' '
+
+-- conta o numero de espacos em uma string
+countSpaces :: String -> Int
+countSpaces str = length (filter espaco str)
+
+-- retorna areas de uma lista de raios
+calcAreas :: [Float] -> [Float]
+calcAreas rs = map circleArea rs
+
+-- recriando elem
+charFound :: Char -> String -> Bool
+charFound c str
+  | (length str) == 0 = False
+  | c == (head str) = True
+  | otherwise = charFound c (tail str)
